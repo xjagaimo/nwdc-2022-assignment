@@ -1,65 +1,117 @@
 <!DOCTYPE html>
-<head>
-	<meta charset="UTF-8">
-	<!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
-	<link rel="stylesheet" href="css/style.css">
-
-	<!-- Fonts -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap">
-
-	<title>Nathan's Page</title>
-</head>
-<body>
-	<header>
-		<nav class="nav">
-			<ul class="nav__list">
-				<li class="nav__item"><a href="#home">Home</a></li>
-				<li class="nav__item"><a href="#aboutme">About Me</a></li>
-				<li class="nav__item"><a href="#motivasi">Motivasi Saya untuk Bergabung di NWDC</a></li>
-				<li class="nav__item"><a href="#ekspektasi">Ekspektasi Saya di NWDC</a></li>
-				<li class="nav__item"><a href="#techstack">Tech Stacks!</a></li>
-			</ul>
-		</nav>
-	</header>
-
-	<!-- Introduction -->
-	<section class="intro" id="home">
-		<h1 class="section__title section__title--intro">
-			Halo! Perkenalkan, Saya <strong>Nathan Praja Kusuma</strong>
-		</h1>
-		<img src="img/fotoFullNathan.png" alt="Foto Fullbody Nathan Praja Kusuma">
-	</section>
-
-	<!-- About Me -->
-
-	<!--Motivasi mengikuti NWDC-->
-	<section class="motivasi-saya" id="motivasi">
-		<h2 class="section__title section__title--motivasi">Apa yang Mendorong Saya untuk Bergabung di NWDC?</h2>
-		<div class="motivasi">
-			<div class="motiv">
-				<h3>Belajar tentang Pengembangan Web</h3>
-				<p>Saya ingin belajar tentang pengembangan Web. 
-					Selama ini saya baru mengenal html dan css yang sangat sederhana. 
-					Untuk itu, dengan bergabung ke dalam komunitas NWDC Night Login, 
-					saya akan banyak belajar tentenag pengembangan web.</p>
-			</div>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
+		<link rel="stylesheet" href="css/style.css">
 	
-			<div class="motiv">
-				<h3>Mempersiapkan Diri dengan Keterampilan Kerja</h3>
-				<p>Saya ingin bekerja sebagai seorang web developer setelah lulus nanti. 
-					Agar nantinya saya siap bekerja, saya perlu membekali diri diri saya dengan keterampilan pengembangan web.
-					Harapan saya, keterampilan tersebut dapat terasah dengan baik melalui komunitas NWDC ini.</p>
-			</div>
+		<!-- Fonts -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap">
 	
-			<div class="motiv">
-				<h3>Bertemu Teman-Teman yang Tertarik dengan Web</h3>
-				<p>Selain alasan pribadi di atas, saya juga ingin bergabung ke NWDC untuk dapat 
-					bertemu dengan teman-teman yang memiliki passion yang sama dengan saya.
-					Saya dapat belajar dari mereka yang lebih berpengalaman dan dapat belajar bersama.</p>
-			</div> <!-- /motiv -->
-		</div> <!-- /motivasi -->
+		<title>Nathan's Page</title>
+	</head>
+	<body>
+		<header>
+			<button class="nav-toggle" aria-label="toggle navigation">
+				<span class="hamburger"></span>
+			</button>
+			<nav class="nav">
+				<ul class="nav__list">
+					<li class="nav__item"><a href="#home">Home</a></li>
+					<li class="nav__item"><a href="#about">About Me</a></li>
+					<li class="nav__item"><a href="#motivasi">Motivasi Saya untuk Bergabung di NWDC</a></li>
+					<li class="nav__item"><a href="#ekspektasi">Ekspektasi Saya di NWDC</a></li>
+					<li class="nav__item"><a href="#techstack">Tech Stacks!</a></li>
+				</ul>
+			</nav>
+		</header>
+	
+		<!-- Introduction -->
+		<section class="intro" id="home">
+			<h1 class="section__title section__title--intro">
+				Halo! Saya <strong>Nathan Praja Kusuma</strong>
+			</h1>
+			<img src="img/fotoFullNathan.png" alt="Foto Fullbody Nathan Praja Kusuma">
+		</section>
+	
+		<!-- About Me -->
+		<section class="aboutMe" id="about">
+			<h2 class="section__title section__title--about">Siapa Saya?</h2>
+			<h3 class="section__subtitle section__subtitle--about">Manusia dengan Keinginan Sederhana :)</h3>
+			<p class="aboutMeDesc">
+				Perkenalkan, saya Nathan Praja Kusuma. 
+				Kota asal saya Surakarta (Solo), Jawa Tengah.
+				Saya berkuliah di program studi Teknologi Informasi UGM angkatan 2021.
+				Ketertarikan saya dengan dunia komputer dan pemrograman membuat saya bercita-cita menjadi seorang developer.
+				Dengan bergabung ke dalam komunitas di Night Login, saya ingin bertemu dengan teman-teman yang memiliki minat yang sama dengan saya.
+			</p>
+	
+			<div class="aboutMeFoto">
+				<img src="img/pasFoto.png" alt="Pas Foto Nathan Praja Kusuma">
+			</div>
+		</section>
+	
+		<!--Motivasi mengikuti NWDC-->
+		<section class="motivasiSaya" id="motivasi">
+			<h2 class="section__title section__title--motivasi">Apa yang Mendorong Saya untuk Bergabung di NWDC?</h2>
+			<div class="motivasi">
+	
+				<div class="motiv">
+					<h3>Belajar tentang Pengembangan Web</h3>
+					<p>
+						Saya ingin belajar tentang pengembangan Web. 
+						Selama ini saya baru mengenal html dan css yang sangat sederhana. 
+						Untuk itu, dengan bergabung ke dalam komunitas NWDC Night Login, saya akan banyak belajar tentng pengembangan web.
+					</p>
+				</div>
 		
-	</section>
-
+				<div class="motiv">
+					<h3>Mempersiapkan Diri dengan Keterampilan Kerja</h3>
+					<p>
+						Saya ingin bekerja sebagai seorang web developer setelah lulus nanti. 
+						Agar nantinya saya siap bekerja, saya perlu membekali diri diri saya dengan keterampilan pengembangan web.
+						Harapan saya, keterampilan tersebut dapat terasah dengan baik melalui komunitas NWDC ini.
+					</p>
+				</div>
+		
+				<div class="motiv">
+					<h3>Bertemu Teman-Teman yang Memiliki Minat yang Sama</h3>
+					<p>
+						Selain alasan pribadi di atas, saya juga ingin bergabung ke NWDC untuk dapat bertemu dengan teman-teman yang memiliki passion yang sama dengan saya.
+						Saya dapat belajar dari mereka yang lebih berpengalaman dan dapat belajar bersama.
+					</p>
+				</div> <!-- /motiv -->
+			</div> <!-- /motivasi -->
+		</section>
 	
-</body>
+		<!--Ekspetasi saya-->
+		<section class="ekspektasiSaya" id="ekspektasi">
+			<h2 class="section__title section__title--ekspektasi">Bagaimana Ekspektasi Saya jika Tergabung di NWDC?</h2>
+			<p class="ekspektasiSayaDesc">
+				Jika saya tergabung ke dalam komunitas NWDC Night Login, saya berharap semua motivasi saya di atas dapat terpenuhi.
+				Ekspektasi saya, setelah 1 periode (1 tahun) di NWDC, saya memahami segala bentu proses yang perlu dilakukan untuk membangun sebuah web.
+				Selain itu, saya berharap agar saya dapt menambah pengalaman di bidang pemrograman dengan mengikuti komunitas ini.
+			</p>
+		</section>
+	
+		<!--tech stack-->
+		<section class="techstackSaya" id="techstack">
+			<h2 class="section__title section__title--techstack">TechStack yang Saya Pelajari/Kuasai</h2>
+			<p class="techstackDesc">
+				Sebenarnya, saya belum menguasai TechStack apapun :). 
+				Saat ini, saya hanya memahami HTML dan CSS yang sangat mendasar (bahkan, untuk membuat laman ini saya hanya mengikuti sebuah tutorial :')). 
+				Saya juga hanya tahu JavaScript yang sangat basic (seperti dasar-dasar pemrograman pada bahasa lain).
+				Saya harap saya dapat lebih mengenal berbagai macam TechStack lainnya, seperti React.js, Node.js, ataupun yang lainnya setelah saya bergabung ke dalam NWDC.
+			</p>
+		</section>
+
+		<footer>
+			<ul class="socialList">
+				<li class="socialList--item"><a class="socalList__link" href="mailto:nathanpk1902@gmail.com">E-mail</a></li>
+				<li class="socialList--item"><a class="socalList__link" href="https://github.com/xjagaimo">Github</a></li>
+				<li class="socialList--item"><a class="socalList__link" href="https://www.linkedin.com/in/nathan-praja-kusuma-1136a4219/">LinkedIn</a></li>
+			</ul>
+		</footer>
+		
+	</body>
+</html>
