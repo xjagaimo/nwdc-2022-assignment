@@ -4,6 +4,8 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
 	
 		<!-- Fonts -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap">
@@ -12,18 +14,8 @@
 	</head>
 	<body>
 		<header>
-			<button class="nav-toggle" aria-label="toggle navigation">
-				<span class="hamburger"></span>
-			</button>
-			<nav class="nav">
-				<ul class="nav__list">
-					<li class="nav__item"><a href="#home">Home</a></li>
-					<li class="nav__item"><a href="#about">About Me</a></li>
-					<li class="nav__item"><a href="#motivasi">Motivasi Saya untuk Bergabung di NWDC</a></li>
-					<li class="nav__item"><a href="#ekspektasi">Ekspektasi Saya di NWDC</a></li>
-					<li class="nav__item"><a href="#techstack">Tech Stacks!</a></li>
-				</ul>
-			</nav>
+			<!--Logo-->
+			<h3>Nathan's Page</h3>
 		</header>
 	
 		<!-- Introduction -->
@@ -81,32 +73,45 @@
 			</div> <!-- /motivasi -->
 		</section>
 	
-		<!--Ekspetasi saya-->
-		<section class="ekspektasiSaya" id="ekspektasi">
-			<h3 class="section__title section__title--ekspektasi">Bagaimana Ekspektasi Saya jika Tergabung di NWDC?</h3>
-			<p class="ekspektasiSayaDesc">
-				Jika saya tergabung ke dalam komunitas NWDC Night Login, saya berharap semua motivasi saya di atas dapat terpenuhi.
-				Ekspektasi saya, setelah 1 periode (1 tahun) di NWDC, saya memahami segala bentu proses yang perlu dilakukan untuk membangun sebuah web.
-				Selain itu, saya berharap agar saya dapt menambah pengalaman di bidang pemrograman dengan mengikuti komunitas ini.
-			</p>
-		</section>
-	
-		<!--tech stack-->
-		<section class="techstackSaya" id="techstack">
-			<h3 class="section__title section__title--techstack">TechStack yang Saya Pelajari/Kuasai</h3>
-			<p class="techstackDesc">
-				Sebenarnya, saya belum menguasai TechStack apapun :). 
-				Saat ini, saya hanya memahami HTML dan CSS yang sangat mendasar (bahkan, untuk membuat laman ini saya hanya mengikuti sebuah tutorial :')). 
-				Saya juga hanya tahu JavaScript yang sangat basic (seperti dasar-dasar pemrograman pada bahasa lain).
-				Saya harap saya dapat lebih mengenal berbagai macam TechStack lainnya, seperti React.js, Node.js, ataupun yang lainnya setelah saya bergabung ke dalam NWDC.
-			</p>
+		<section class="techEkspekSaya">
+			<div class="techEkspek">
+				<!--Ekspetasi saya-->
+				<div class="ekspektasiSaya" id="ekspektasi">
+					<h3 class="section__title section__title--ekspektasi">Bagaimana Ekspektasi Saya jika Tergabung di NWDC?</h3>
+					<p class="ekspektasiSayaDesc">
+						Jika saya tergabung ke dalam komunitas NWDC Night Login, saya berharap semua motivasi saya di atas dapat terpenuhi.
+						Ekspektasi saya, setelah 1 periode (1 tahun) di NWDC, saya memahami segala bentu proses yang perlu dilakukan untuk membangun sebuah web.
+						Selain itu, saya berharap agar saya dapt menambah pengalaman di bidang pemrograman dengan mengikuti komunitas ini.
+					</p>
+				</div>
+			
+				<!--tech stack-->
+				<div class="techstackSaya" id="techstack">
+					<h3 class="section__title section__title--techstack">TechStack yang Saya Pelajari/Kuasai</h3>
+					<p class="techstackDesc">
+						Sebenarnya, saya belum menguasai TechStack apapun :). 
+						Saat ini, saya hanya memahami HTML dan CSS yang sangat mendasar (bahkan, untuk membuat laman ini saya hanya mengikuti sebuah tutorial :')). 
+						Saya juga hanya tahu JavaScript yang sangat basic (seperti dasar-dasar pemrograman pada bahasa lain).
+						Saya harap saya dapat lebih mengenal berbagai macam TechStack lainnya, seperti React.js, Node.js, ataupun yang lainnya setelah saya bergabung ke dalam NWDC.
+					</p>
+				</div>
+			</div>
 		</section>
 
-		<footer>
+		<!-- Footer -->
+		<footer class="footer">
+			<a class="footer__link" href="mailto:nathanpk1902@gmail.com">E-mail</a>
 			<ul class="socialList">
-				<li class="socialList--item"><a class="socalList__link" href="mailto:nathanpk1902@gmail.com">E-mail</a></li>
-				<li class="socialList--item"><a class="socalList__link" href="https://github.com/xjagaimo">Github</a></li>
-				<li class="socialList--item"><a class="socalList__link" href="https://www.linkedin.com/in/nathan-praja-kusuma-1136a4219/">LinkedIn</a></li>
+				<li class="socialList--item">
+					<a class="socalList__link" href="https://github.com/xjagaimo">
+						<i class="fab fa-github-square"></i>
+					</a>
+				</li>
+				<li class="socialList--item">
+					<a class="socalList__link" href="https://www.linkedin.com/in/nathan-praja-kusuma-1136a4219/">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</li>
 			</ul>
 		</footer>
 

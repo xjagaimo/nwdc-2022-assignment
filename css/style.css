@@ -54,6 +54,11 @@ img {
     max-width: 100%;
 }
 
+:focus {
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+}
+
 /* Typography */
 strong {
     font-weight: var(--fw-bold);
@@ -82,10 +87,12 @@ h3 {
 
 .section__title--intro {
     font-weight: var(--fw-reg);
+    font-size: var(--fs-h1);
 }
 
 .section__title--intro strong {
     display: block;
+    font-weight: var(--fw-bold);
 }
 
 .section__subtitle {
@@ -101,8 +108,12 @@ h3 {
 }
 
 /* Header */
-nav {
-    display: none;
+header {
+    display: block;
+    padding: 1em;
+    color: var(--clr-light);
+    background: var(--clr-dark);
+    font-family: var(--ff-secondary);
 }
 
 /* Intro/Home */
@@ -112,7 +123,6 @@ nav {
 }
 
 .homeFoto {
-    /*width: 313px;*/
     box-shadow: var(--boxshad);
 }
 
@@ -216,37 +226,75 @@ nav {
     }
 }
 
-/* Ekspektasi */
-.ekspektasiSaya {
-    text-align: center;
-    margin: 0 auto;    
-}
+/* TechEkspek */
 
-.section__title--ekspektasi {
-    padding-left: 2em;
-    padding-right: 2em;
-    margin-bottom: 1em;
-}
-
-.ekspektasiDesc{
-    padding-left: 2em;
-    padding-right: 2em;
-}
-
-/* TechStack */
-.techstackSaya {
+.techEkspekSaya {
     text-align: center;
     color: var(--clr-light);
     background-color: var(--clr-dark);
-    margin: 0 auto;
 }
 
+.section__title--ekspektasi,
 .section__title--techstack {
-    padding-left: 2em;
-    padding-right: 2em;
+    color: var(--clr-accent);
+    margin-bottom: 2em;
 }
 
-.techstackDesc {
-    padding-left: 2em;
-    padding-right: 2em;
+.ekspektasiSaya {
+    margin-bottom: 2.5em;
+}
+
+@media (min-width: 800px) {
+    .techEkspek {
+        display: flex;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .techstackSaya {
+        margin-left: 3em;
+    }
+}
+
+/* Footer */
+.footer {
+    background-color: #111;
+    color: var(--clr-accent);
+    text-align: center;
+    padding: 2.5em 0;
+    font-size: var(--fs-h3);
+}
+
+.footer a {  
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer__link {
+    font-weight: var(--fw-bold);
+}
+
+.socialList {
+    list-style: none;
+    display: flex;
+    margin: 2em 0 0;
+    padding: 0;
+    justify-content: center;
+}
+
+.socialList--item {
+    margin: 0 .5em;
+}
+
+.socialList__link {
+    padding: .5em;
+}
+
+.footer__link:hover {
+    text-decoration: underline;
+}
+
+.footer__link:hover,
+.socialList__link:hover {
+    opacity: .7;
 }
